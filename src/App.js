@@ -12,10 +12,10 @@ import {
   Products,
   PrivateRoute,
   AuthWrapper,
-  Coupons,
-  News,
+  // Coupons,
+  // News,
   Covid,
-  Recipes,
+  // Recipes,
 } from './pages'
 
 function App() {

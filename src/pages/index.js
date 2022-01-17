@@ -7,10 +7,10 @@ import Error from './ErrorPage'
 import Checkout from './CheckoutPage'
 import PrivateRoute from './PrivateRoute'
 import AuthWrapper from './AuthWrapper'
-import Coupons from './CouponsPage';
-import News from './NewsPage';
+// import Coupons from './CouponsPage';
+// import News from './NewsPage';
 import Covid from './CovidPage';
-import Recipes from './RecipesPages';
+// import Recipes from './RecipesPages';
 
 
 export {
@@ -23,8 +23,8 @@ export {
   Checkout,
   PrivateRoute,
   AuthWrapper,
-  Coupons,
-  News,
+  // Coupons,
+  // News,
   Covid,
-  Recipes,
+  // Recipes,
 }
