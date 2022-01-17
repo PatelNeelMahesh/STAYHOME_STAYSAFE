@@ -6,16 +6,23 @@ const App = () => {
 
     const [search, setSearch] = useState('');
 
-    const [query, setQuery] = useState('pay');
+    const [query, setQuery] = useState('Pay');
 
     const [coupons , setCoupons] = useState([]);
 
     const getCoupons = async () => {
-        const response = await fetch(`http://localhost:555/api/s/${query}`);
+
+        // using Spring Boot 
+        // const response = await fetch(`http://localhost:8080/searchcoupon/${query}`);
+        
+        // using Lovely Express Server
+        // const response = await fetch(`http://localhost:555/api/s/${query}`);
+        
+        
+        const response = await fetch(`http://localhost:5555/${query}`);
 
         const data = await response.json();
         setCoupons(data);
-
         // console.log(data);
     }
 

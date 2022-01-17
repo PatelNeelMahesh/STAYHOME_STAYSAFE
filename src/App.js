@@ -15,6 +15,7 @@ import {
   Coupons,
   News,
   Covid,
+  Recipes,
 } from './pages'
 
 function App() {
@@ -29,13 +30,13 @@ function App() {
             <Home />
           </Route>
           
-          <Route exact path='/coupons'>
+          {/* <Route exact path='/coupons'>
             <Coupons />
-          </Route>
-
+          </Route> */}
+{/* 
           <Route exact path='/news'>
             <News />
-          </Route>
+          </Route> */}
 
           <Route exact path='/covid'>
             <Covid />
@@ -52,6 +53,10 @@ function App() {
           <Route exact path='/products'>
             <Products />
           </Route>
+{/* 
+          <Route exact path='/recipes'>
+            <Recipes />
+          </Route> */}
           
           <Route exact path='/products/:id' children={<SingleProduct />} />
           

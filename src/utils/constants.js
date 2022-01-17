@@ -6,16 +6,16 @@ export const links = [
     text: 'home',
     url: '/',
   },
-  {
-    id: 2,
-    text: 'coupons',
-    url: '/coupons',
-  },
-  {
-    id: 3,
-    text: 'news',
-    url: '/news',
-  },
+  // {
+  //   id: 2,
+  //   text: 'coupons',
+  //   url: '/coupons',
+  // },
+  // {
+  //   id: 3,
+  //   text: 'news',
+  //   url: '/news',
+  // },
   {
     id: 4,
     text: 'products',
@@ -31,11 +31,11 @@ export const links = [
     text: 'about',
     url: '/about',
   },
-  {
-    id:7,
-    text: 'Error',
-    url: '/cocktails',
-  },
+  // {
+  //   id:7,
+  //   text: 'Recipe',
+  //   url: '/recipes',
+  // },
 ]
 
 export const services = [

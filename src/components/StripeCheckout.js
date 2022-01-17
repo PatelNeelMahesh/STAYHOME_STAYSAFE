@@ -19,7 +19,7 @@ const CheckoutForm = () => {
   const { cart, total_amount, shipping_fee, clearCart } = useCartContext()
   const { myUser } = useUserContext()
   const history = useHistory()
-  // STRIPE STUFF
+  // STRIPE STUFF 
   const [succeeded, setSucceeded] = useState(false)
   const [error, setError] = useState(null)
   const [processing, setProcessing] = useState('')
@@ -29,7 +29,7 @@ const CheckoutForm = () => {
   const elements = useElements()
 
   const cardStyle = {
-    style: {
+    style: {   
       base: {
         color: '#32325d',
         fontFamily: 'Arial, sans-serif',
@@ -45,7 +45,7 @@ const CheckoutForm = () => {
       },
     },
   }
-
+ 
   const createPaymentIntent = async () => {
     try {
       const { data } = await axios.post(
@@ -54,6 +54,7 @@ const CheckoutForm = () => {
       )
 
       setClientSecret(data.clientSecret)
+      //  console.log(data.clientSecret)
     } catch (error) {
       // console.log(error.response)
     }
@@ -86,7 +87,7 @@ const CheckoutForm = () => {
       setTimeout(() => {
         clearCart()
         history.push('/')
-      }, 10000)
+      }, 5000)
     }
   }
 

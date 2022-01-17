@@ -10,6 +10,7 @@ import AuthWrapper from './AuthWrapper'
 import Coupons from './CouponsPage';
 import News from './NewsPage';
 import Covid from './CovidPage';
+import Recipes from './RecipesPages';
 
 
 export {
@@ -25,4 +26,5 @@ export {
   Coupons,
   News,
   Covid,
+  Recipes,
 }

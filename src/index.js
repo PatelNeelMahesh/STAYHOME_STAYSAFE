@@ -16,10 +16,10 @@ import { Auth0Provider } from '@auth0/auth0-react'
 
 ReactDOM.render(
   <Auth0Provider
-    // domain={process.env.REACT_APP_AUTH_DOMAIN}
-    // clientId={process.env.REACT_APP_AUTH_CLIENT_ID}
-    domain={`couponstore.us.auth0.com`}
-    clientId={`Qep4K4QmDbQsDkbJPn8qn0Zw4jF3mP4Y`}
+    domain={process.env.REACT_APP_AUTH_DOMAIN}
+    clientId={process.env.REACT_APP_AUTH_CLIENT_ID}
+    // domain={`couponstore.us.auth0.com`}
+    // clientId={`Qep4K4QmDbQsDkbJPn8qn0Zw4jF3mP4Y`}
     redirectUri={window.location.origin}
     cacheLocation='localstorage'
   >
